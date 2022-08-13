@@ -10,14 +10,52 @@
 <body>
     <header>
         <h1>Welcome to the realm of DOM</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum natus velit eius officiis optio vel, impedit laboriosam ab sint, delectus iure! Iure quasi, sit non consectetur eos impedit doloribus? Corrupti.</p>
+        
     </header>
     <main>
-        <h1>My awesome DOM</h1>
-        <ul>
-            <li>Jalali set</li>
-            <li>Shafayet</li>
-            <li>bonobash</li>
-        </ul>
+        <section>
+            <h1>My awesome DOM</h1>
+            <ul>
+                <li>Jalali set</li>
+                <li>Shafayet</li>
+                <li>bonobash</li>
+                <li>monobash</li>
+            </ul>
+        </section>
+        <section>
+            <h1 id = "fruits-title">Fruits i like</h1>
+            <ul>
+                <li>Apple</li>
+                <li>Banana</li>
+                <li>Carrot</li>
+            </ul>
+        </section>
+        <section>
+            <h1>Places I like to visit</h1>
+            <ul>
+                <li>Sundarban</li>
+                <li>Bandarban</li>
+                <li>Katabon</li>
+                <li>Shalbon</li>
+            </ul>
+        </section>
     </main>
+
+
+    <script src="js/script.js"></script>
+    <script>
+        const liCollection = document.getElementsByTagName('li');
+        for (const li of liCollection) {
+            <!-- console.log(li); -->
+            console.log(li.innerText);
+        };
+        const allHeadings = document.getElementsByTagName('h1');
+        for (const h1 of allHeadings) {
+            <!-- console.log(h1); -->
+            /* console.log(h1);*/
+            console.log(h1.innerText);
+        }
+    </script>
 </body>
 </html>
