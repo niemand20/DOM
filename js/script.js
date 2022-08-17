@@ -14,13 +14,13 @@ for (const h1 of allHeadings) {
 const places = document.getElementsByClassName("important-places");
 console.log(places);
 for (const place of places){
-    console.log(place.innerText);
+    // console.log(place.innerText);
 };
 
 // querySelectorAll()
 const someLi = document.querySelectorAll(".fruits-container li");
 console.log(someLi);
 for (const li of someLi){
-    console.log(li);
-    console.log(li.innerText);
+    // console.log(li);
+    // console.log(li.innerText);
 }
