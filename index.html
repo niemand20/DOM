@@ -23,8 +23,8 @@
                 <li>monobash</li>
             </ul>
         </section>
-        <section>
-            <h1 id = "fruits-title">Fruits i like</h1>
+        <section class = "fruits-container">
+            <h1 id = "fruits-title" class = "some-class first-class second-class">Fruits i like</h1>
             <ul>
                 <li>Apple</li>
                 <li>Banana</li>
@@ -32,30 +32,29 @@
             </ul>
         </section>
         <section>
-            <h1>Places I like to visit</h1>
+            <h1 id = "places-title" class = "places">Places I like to visit</h1>
             <ul>
-                <li>Sundarban</li>
-                <li>Bandarban</li>
-                <li>Katabon</li>
-                <li>Shalbon</li>
+                <li class = "important-places">Sundarban</li>
+                <li class = "important-places">Bandarban</li>
+                <li class = "important-places">Katabon</li>
+                <li class="other-place">Shalbon</li>
             </ul>
+
         </section>
+        <div >
+            <h1 id = "fruits" class = "fruits-class">Fruits</h1>
+            
+                <ul>
+                    <li>Apple</li>
+                    <li>Banana</li>
+                    <li>Carrot</li>
+                </ul>
+            
+        </div>
     </main>
 
-
+    <!-- JS Part Started -->
     <script src="js/script.js"></script>
-    <script>
-        const liCollection = document.getElementsByTagName('li');
-        for (const li of liCollection) {
-            <!-- console.log(li); -->
-            console.log(li.innerText);
-        };
-        const allHeadings = document.getElementsByTagName('h1');
-        for (const h1 of allHeadings) {
-            <!-- console.log(h1); -->
-            /* console.log(h1);*/
-            console.log(h1.innerText);
-        }
-    </script>
+    <!-- JS Part Ended -->
 </body>
 </html>

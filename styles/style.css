@@ -1,9 +1,13 @@
 h1{
     color: lightcoral
 }
-li{
+.fruits-container li{
     color: tomato;
 }
 #fruits-title{
-    
+    color: black;
+}
+
+.important-places{
+    color: blueviolet;
 }
