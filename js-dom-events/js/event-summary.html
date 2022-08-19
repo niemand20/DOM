@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Summary</title>
+</head>
+<body>
+    <!-- system 1: adding handler starts -->
+    <h1>Final DOM event handlers</h1>
+    <h3 id="handler-status">Default text</h3>
+    <br>
+    <br>
+    <p id ="input-text-display">default input text</p>
+    <input id="input-field" type="text">
+    <button id = "btn-update">Update</button>
+    <br>
+    <br>
+    <button onclick = "handleOnClick()">Handle Event by adding onclick function</button>
+    <!-- system 1: adding handler ends -->
+
+    <!-- system 2:  -->
+    <h3 id="handler-status">Default text</h3>
+    <button id="event-listener">Handle event by adding addEventListener</button>
+    
+    <script>
+        /*system 1: adding handler starts*/
+        function handleOnClick(){
+            const handlerStatus = document.getElementById("handler-status");
+            handlerStatus.innerText = "Handled by function attached on onclick";
+        }
+        /*system 1: adding handler end*/
+
+        /*system 2: adding eventListener starts*/
+        document.getElementById("event-listener").addEventListener("click", function(){
+            const handlerStatus = document.getElementById("event-listener");
+            handlerStatus.innerText = "Inner text changed by adding event listener"
+        })
+        /*system 2: adding eventListener ends*/
+
+        //option 2: recap
+        document.getElementById("btn-update").addEventListener("click",function(){
+            const inputField = document.getElementById("input-field");
+            const inputText = inputField.value;
+            const p = document.getElementById("input-text-display");
+            p.innerText = inputText;
+            inputField.value ='';
+        })
+
+    </script>
+</body>
+</html>
